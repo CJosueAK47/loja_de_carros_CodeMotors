@@ -46,6 +46,7 @@ $(document).ready(function(){
             nome: 'Digite seu nome completo'
         },
         submitHandler: function(nomeVeiculo){
+            let nomeVeiculo = $(this).parent().find('h3').text();
             alert(`Seu BMW ${nomeVeiculo} está à sua espera !`);
         },
         invalidHandler: function(evento, validador){
